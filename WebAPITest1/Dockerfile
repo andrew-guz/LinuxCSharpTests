@@ -6,6 +6,6 @@ WORKDIR /opt/WebAPITest1
 
 COPY /bin/Release/net7.0/publish .
 
-EXPOSE 5000
+EXPOSE 15800
 
 ENTRYPOINT [ "./WebAPITest1" ]
