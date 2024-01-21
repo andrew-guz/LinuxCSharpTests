@@ -23,3 +23,10 @@ app.UseAuthorization();
 app.MapControllers();
 
 app.Run();
+/*
+You can run this way, but in this case appsettings.json Kestrel will anyway override this
+So to use this way you should change appsettings.json
+app.Run("http://localhost:15802");
+
+Or you can use  ASPNETCORE_URLS env
+*/
