@@ -18,7 +18,7 @@
         {
             "label": "build and publish release",
             "type": "shell",
-            "command": "dotnet build -c Debug ${workspaceFolder}/WebAPITest1.sln",
+            "command": "dotnet build -c Release ${workspaceFolder}/WebAPITest1.sln && dotnet publish -c Release ${workspaceFolder}/WebAPITest1.sln",
             "problemMatcher": "$msCompile"
         }
     ]
