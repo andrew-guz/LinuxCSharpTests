@@ -30,5 +30,19 @@ namespace WebAPITest1.Controllers
             })
             .ToArray();
         }
+
+        [HttpGet]
+        [Route("http")]
+        public IActionResult GetAsHttp()
+        {
+            return Ok(Get());
+        }
+
+        [HttpGet]
+        [Route("http/bad")]
+        public IActionResult GetAsHttpBad()
+        {
+            return BadRequest(Get());
+        }
     }
 }
