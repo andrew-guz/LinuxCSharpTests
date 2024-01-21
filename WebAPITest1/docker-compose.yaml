@@ -1,0 +1,8 @@
+services:
+  csharp_web_service:
+    image: csharp_web_service_img:01
+    container_name: csharp_web_service
+    ports:
+      - "15800:15800"
+      - "15801:15801"
+    restart: always

@@ -8,5 +8,4 @@ COPY /bin/Release/net7.0/publish .
 
 EXPOSE 5000
 
-#CMD ./WebAPITest1
 ENTRYPOINT [ "./WebAPITest1" ]
